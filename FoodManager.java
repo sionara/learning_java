@@ -1,4 +1,6 @@
-public class FoodManager {
+import java.util.*; 
+
+class FoodManager {
 
     public static String[] meatlist = new String[10];
     public static String[] fruitveggielist = new String[10];
@@ -20,8 +22,8 @@ public class FoodManager {
         FoodManager.sortFood(apple);
         FoodManager.sortFood(ham);
 
-        System.out.println(meatlist.toString());
-        System.out.println(fruitveggielist.toString());
+        System.out.println(Arrays.toString(meatlist));
+        System.out.println(Arrays.toString(fruitveggielist));
 
     }
 }
