@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>
+    회원가입
+  </title>
+</head>
+<body>
+  <h1>회원가입<br>
+  ------------------------------------------------</h1>
+      <form action="file:///C:/Users/sionl/devs/website/회원가입.html?">
+       <p>  아이디 <input type="text" id = 'id'>
+       <input type="button" value="ID확인" onclick= idValid()>
+       <p>비밀번호 <input type="password" id="pwd"></p>
+       <p> 이 름 <input type="text" id="name"></p>
+       <p>생년월일 <input type="date" id = "bday" name="birth"></p>
+       <input type="submit" value="저장" onclick = allFilled()>
+       <input type="reset" value="새로입력" onclick = refresh()>
+    </form>
+  
+  <script type=text/javascript>
+    const idvalue = document.querySelector("#id");
+    const pwd = document.querySelector("#pwd");
+    const name = document.querySelector("#name");
+    const birthdate = document.querySelector("#bday");
+    
+    function idValid(){
+      
+      if (idvalue.value === "Christ"){
+        alert("Invalid Id")
+      } else{
+        console.log("ok")
+      }
+    }
+    function allFilled(){
+      
+      if (idvalue.value == "" || pwd.value == "" || name.value == "" || birthdate.value == "") {
+        alert("모두 입력해 주세요.")
+      } else {
+        alert("Confirm.")
+      }
+    }
+    function refresh(){
+      idvalue, pwd, name, birthdate == null;
+    }
+  </script>
+
+</body>
+</html>
