@@ -13,23 +13,24 @@
     ------------------------------------------------</h1>
     <h1>스터디 그룹 홈페이지에 오신 것을 환영합니다.<br>
     처음 방문하신 분은 회원가입을 해 주시기 바랍니다.</h1>
-
-    <div class = "userinfo">
-        <table style= "float: left">
-            아이디 <input type="text" id="id"><br>
-            비밀번호 <input type="password" id="pwd" style="width:100 ">
-        </table>
-    </div>    
-    <div class = "button">
-        <table table = "float: left">
-            <input type="button" value="로그인" style="height:80" onclick = properInput()>
-        </table>
-    </div>
-    
-        <input type="button" value="회원가입" onclick = "window.location.href = '회원가입.html';" >
+    <table>
+        <td>
+            <div>
+                아이디 <input type="text" id="id"><br>
+                비밀번호 <input type="password" id="pwd" style="width:100" style= text-align:center>
+            </div> 
+        </td>
+        <td>
+            <div class = "button">
+                <input type="button" value="로그인" style="height:80" onclick = properInput()>
+            </div>
+        </td>
+    </table>
+    <table>  
+        <td><input type="button" value="회원가입" onclick = "window.location.href = '회원가입.html';" ></td>
+        <td><input type="submit" value="ID찾기"></td>
         <!--can also use form action tag-->
-        <input type="submit" value="ID찾기">
-    
+    </table>
     <script type= text/javascript>
         function properInput(){
             const id = document.querySelector('#id');
